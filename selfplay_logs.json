@@ -1,0 +1,852 @@
+[
+  {
+    "epoch": 0,
+    "final_score": {
+      "agent1": 105,
+      "agent2": 107
+    },
+    "winner": "Agent2",
+    "moves_played": [
+      {
+        "agent": "Agent1",
+        "word": "AIR",
+        "position": [
+          7,
+          7
+        ],
+        "direction": "HORIZ",
+        "score": 6
+      },
+      {
+        "agent": "Agent2",
+        "word": "BIMA",
+        "position": [
+          6,
+          5
+        ],
+        "direction": "HORIZ",
+        "score": 17
+      },
+      {
+        "agent": "Agent1",
+        "word": "OBIA",
+        "position": [
+          5,
+          5
+        ],
+        "direction": "VERT",
+        "score": 8
+      },
+      {
+        "agent": "Agent2",
+        "word": "DEPeND",
+        "position": [
+          3,
+          10
+        ],
+        "direction": "VERT",
+        "score": 26
+      },
+      {
+        "agent": "Agent1",
+        "word": "EW",
+        "position": [
+          4,
+          4
+        ],
+        "direction": "VERT",
+        "score": 20
+      },
+      {
+        "agent": "Agent2",
+        "word": "NOnTAX",
+        "position": [
+          3,
+          2
+        ],
+        "direction": "HORIZ",
+        "score": 50
+      },
+      {
+        "agent": "Agent1",
+        "word": "UVEA",
+        "position": [
+          0,
+          11
+        ],
+        "direction": "VERT",
+        "score": 22
+      },
+      {
+        "agent": "Agent2",
+        "word": "ENTHrAL",
+        "position": [
+          8,
+          6
+        ],
+        "direction": "VERT",
+        "score": 63
+      },
+      {
+        "agent": "Agent1",
+        "word": "MOOTS",
+        "position": [
+          8,
+          4
+        ],
+        "direction": "VERT",
+        "score": 24
+      },
+      {
+        "agent": "Agent2",
+        "word": "RaZER",
+        "position": [
+          7,
+          9
+        ],
+        "direction": "VERT",
+        "score": 35
+      },
+      {
+        "agent": "Agent1",
+        "word": "ENJOIN",
+        "position": [
+          2,
+          2
+        ],
+        "direction": "VERT",
+        "score": 28
+      },
+      {
+        "agent": "Agent2",
+        "word": "SPUr",
+        "position": [
+          2,
+          12
+        ],
+        "direction": "VERT",
+        "score": 26
+      },
+      {
+        "agent": "Agent1",
+        "word": "YOWS",
+        "position": [
+          2,
+          6
+        ],
+        "direction": "HORIZ",
+        "score": 36
+      },
+      {
+        "agent": "Agent2",
+        "word": "mIDGETs",
+        "position": [
+          6,
+          1
+        ],
+        "direction": "VERT",
+        "score": 64
+      },
+      {
+        "agent": "Agent1",
+        "word": "TARGE",
+        "position": [
+          1,
+          4
+        ],
+        "direction": "HORIZ",
+        "score": 30
+      },
+      {
+        "agent": "Agent2",
+        "word": "QUOta",
+        "position": [
+          0,
+          10
+        ],
+        "direction": "HORIZ",
+        "score": 36
+      },
+      {
+        "agent": "Agent1",
+        "word": "DRINK",
+        "position": [
+          11,
+          8
+        ],
+        "direction": "HORIZ",
+        "score": 20
+      },
+      {
+        "agent": "Agent2",
+        "word": "Baa",
+        "position": [
+          7,
+          0
+        ],
+        "direction": "VERT",
+        "score": 36
+      },
+      {
+        "agent": "Agent1",
+        "word": "LEAF",
+        "position": [
+          10,
+          3
+        ],
+        "direction": "VERT",
+        "score": 26
+      },
+      {
+        "agent": "Agent2",
+        "word": "NaVy",
+        "position": [
+          14,
+          0
+        ],
+        "direction": "HORIZ",
+        "score": 36
+      },
+      {
+        "agent": "Agent1",
+        "word": "FLIER",
+        "position": [
+          14,
+          5
+        ],
+        "direction": "HORIZ",
+        "score": 24
+      },
+      {
+        "agent": "Agent2",
+        "word": "COseCS",
+        "position": [
+          9,
+          13
+        ],
+        "direction": "VERT",
+        "score": 48
+      },
+      {
+        "agent": "Agent1",
+        "word": "GAT",
+        "position": [
+          0,
+          1
+        ],
+        "direction": "VERT",
+        "score": 12
+      },
+      {
+        "agent": "Agent2",
+        "word": "RIcEs",
+        "position": [
+          10,
+          10
+        ],
+        "direction": "VERT",
+        "score": 26
+      },
+      {
+        "agent": "Agent1",
+        "word": "LI",
+        "position": [
+          0,
+          3
+        ],
+        "direction": "HORIZ",
+        "score": 5
+      },
+      {
+        "agent": "Agent2",
+        "word": "sKy",
+        "position": [
+          10,
+          12
+        ],
+        "direction": "VERT",
+        "score": 12
+      },
+      {
+        "agent": "Agent1",
+        "word": "EL",
+        "position": [
+          1,
+          13
+        ],
+        "direction": "HORIZ",
+        "score": 8
+      },
+      {
+        "agent": "Agent2",
+        "word": "YaUd",
+        "position": [
+          1,
+          0
+        ],
+        "direction": "VERT",
+        "score": 13
+      },
+      {
+        "agent": "Agent1",
+        "word": "IN",
+        "position": [
+          13,
+          0
+        ],
+        "direction": "VERT",
+        "score": 2
+      },
+      {
+        "agent": "Agent2",
+        "word": "gI",
+        "position": [
+          5,
+          6
+        ],
+        "direction": "VERT",
+        "score": 6
+      },
+      {
+        "agent": "Agent1",
+        "word": "HEW",
+        "position": [
+          0,
+          8
+        ],
+        "direction": "VERT",
+        "score": 9
+      },
+      {
+        "agent": "Agent2",
+        "word": "ReE",
+        "position": [
+          13,
+          8
+        ],
+        "direction": "HORIZ",
+        "score": 5
+      },
+      {
+        "agent": "Agent1",
+        "word": "LOUT",
+        "position": [
+          10,
+          3
+        ],
+        "direction": "HORIZ",
+        "score": 4
+      }
+    ]
+  },
+  {
+    "epoch": 1,
+    "final_score": {
+      "agent1": 128,
+      "agent2": 110
+    },
+    "winner": "Agent1",
+    "moves_played": [
+      {
+        "agent": "Agent1",
+        "word": "LEWD",
+        "position": [
+          7,
+          7
+        ],
+        "direction": "HORIZ",
+        "score": 16
+      },
+      {
+        "agent": "Agent2",
+        "word": "WIFE",
+        "position": [
+          7,
+          9
+        ],
+        "direction": "VERT",
+        "score": 18
+      },
+      {
+        "agent": "Agent1",
+        "word": "SET",
+        "position": [
+          11,
+          9
+        ],
+        "direction": "HORIZ",
+        "score": 28
+      },
+      {
+        "agent": "Agent2",
+        "word": "HeX",
+        "position": [
+          12,
+          10
+        ],
+        "direction": "HORIZ",
+        "score": 36
+      },
+      {
+        "agent": "Agent1",
+        "word": "RANIDS",
+        "position": [
+          3,
+          10
+        ],
+        "direction": "VERT",
+        "score": 18
+      },
+      {
+        "agent": "Agent2",
+        "word": "kEG",
+        "position": [
+          2,
+          11
+        ],
+        "direction": "VERT",
+        "score": 16
+      },
+      {
+        "agent": "Agent1",
+        "word": "NIP",
+        "position": [
+          1,
+          12
+        ],
+        "direction": "VERT",
+        "score": 22
+      },
+      {
+        "agent": "Agent2",
+        "word": "rEP",
+        "position": [
+          10,
+          8
+        ],
+        "direction": "HORIZ",
+        "score": 24
+      },
+      {
+        "agent": "Agent1",
+        "word": "DIB",
+        "position": [
+          13,
+          11
+        ],
+        "direction": "HORIZ",
+        "score": 36
+      },
+      {
+        "agent": "Agent2",
+        "word": "sAT",
+        "position": [
+          14,
+          12
+        ],
+        "direction": "HORIZ",
+        "score": 45
+      },
+      {
+        "agent": "Agent1",
+        "word": "SEV",
+        "position": [
+          3,
+          13
+        ],
+        "direction": "VERT",
+        "score": 20
+      },
+      {
+        "agent": "Agent2",
+        "word": "pESETA",
+        "position": [
+          11,
+          7
+        ],
+        "direction": "HORIZ",
+        "score": 16
+      },
+      {
+        "agent": "Agent1",
+        "word": "AM",
+        "position": [
+          6,
+          7
+        ],
+        "direction": "HORIZ",
+        "score": 16
+      },
+      {
+        "agent": "Agent2",
+        "word": "pORIN",
+        "position": [
+          2,
+          6
+        ],
+        "direction": "VERT",
+        "score": 11
+      },
+      {
+        "agent": "Agent1",
+        "word": "TAO",
+        "position": [
+          3,
+          5
+        ],
+        "direction": "VERT",
+        "score": 13
+      },
+      {
+        "agent": "Agent2",
+        "word": "ClOT",
+        "position": [
+          0,
+          7
+        ],
+        "direction": "VERT",
+        "score": 33
+      },
+      {
+        "agent": "Agent1",
+        "word": "CITED",
+        "position": [
+          0,
+          7
+        ],
+        "direction": "HORIZ",
+        "score": 10
+      },
+      {
+        "agent": "Agent2",
+        "word": "MOo",
+        "position": [
+          10,
+          12
+        ],
+        "direction": "HORIZ",
+        "score": 17
+      },
+      {
+        "agent": "Agent1",
+        "word": "ENaMEL",
+        "position": [
+          3,
+          8
+        ],
+        "direction": "VERT",
+        "score": 16
+      },
+      {
+        "agent": "Agent2",
+        "word": "KOpH",
+        "position": [
+          5,
+          4
+        ],
+        "direction": "VERT",
+        "score": 17
+      },
+      {
+        "agent": "Agent1",
+        "word": "pUJA",
+        "position": [
+          12,
+          4
+        ],
+        "direction": "HORIZ",
+        "score": 19
+      },
+      {
+        "agent": "Agent2",
+        "word": "ArSON",
+        "position": [
+          13,
+          1
+        ],
+        "direction": "HORIZ",
+        "score": 22
+      },
+      {
+        "agent": "Agent1",
+        "word": "IVy",
+        "position": [
+          8,
+          5
+        ],
+        "direction": "VERT",
+        "score": 18
+      },
+      {
+        "agent": "Agent2",
+        "word": "GIRO",
+        "position": [
+          8,
+          3
+        ],
+        "direction": "VERT",
+        "score": 24
+      },
+      {
+        "agent": "Agent1",
+        "word": "RYe",
+        "position": [
+          14,
+          0
+        ],
+        "direction": "HORIZ",
+        "score": 30
+      },
+      {
+        "agent": "Agent2",
+        "word": "sATE",
+        "position": [
+          14,
+          5
+        ],
+        "direction": "HORIZ",
+        "score": 15
+      },
+      {
+        "agent": "Agent1",
+        "word": "tOY",
+        "position": [
+          9,
+          2
+        ],
+        "direction": "VERT",
+        "score": 13
+      },
+      {
+        "agent": "Agent2",
+        "word": "aB",
+        "position": [
+          13,
+          8
+        ],
+        "direction": "HORIZ",
+        "score": 10
+      },
+      {
+        "agent": "Agent1",
+        "word": "aD",
+        "position": [
+          12,
+          0
+        ],
+        "direction": "HORIZ",
+        "score": 9
+      },
+      {
+        "agent": "Agent2",
+        "word": "AsKOI",
+        "position": [
+          5,
+          2
+        ],
+        "direction": "HORIZ",
+        "score": 8
+      },
+      {
+        "agent": "Agent1",
+        "word": "QuARE",
+        "position": [
+          3,
+          2
+        ],
+        "direction": "VERT",
+        "score": 14
+      },
+      {
+        "agent": "Agent2",
+        "word": "GHIs",
+        "position": [
+          8,
+          3
+        ],
+        "direction": "HORIZ",
+        "score": 7
+      },
+      {
+        "agent": "Agent1",
+        "word": "INFO",
+        "position": [
+          7,
+          13
+        ],
+        "direction": "VERT",
+        "score": 15
+      },
+      {
+        "agent": "Agent2",
+        "word": "Li",
+        "position": [
+          2,
+          3
+        ],
+        "direction": "VERT",
+        "score": 22
+      },
+      {
+        "agent": "Agent1",
+        "word": "ReCITED",
+        "position": [
+          0,
+          5
+        ],
+        "direction": "HORIZ",
+        "score": 9
+      },
+      {
+        "agent": "Agent2",
+        "word": "ZIn",
+        "position": [
+          7,
+          12
+        ],
+        "direction": "HORIZ",
+        "score": 33
+      },
+      {
+        "agent": "Agent1",
+        "word": "aGE",
+        "position": [
+          7,
+          0
+        ],
+        "direction": "HORIZ",
+        "score": 9
+      },
+      {
+        "agent": "Agent2",
+        "word": "En",
+        "position": [
+          1,
+          9
+        ],
+        "direction": "HORIZ",
+        "score": 8
+      },
+      {
+        "agent": "Agent1",
+        "word": "dOR",
+        "position": [
+          10,
+          1
+        ],
+        "direction": "HORIZ",
+        "score": 2
+      },
+      {
+        "agent": "Agent2",
+        "word": "pE",
+        "position": [
+          0,
+          13
+        ],
+        "direction": "VERT",
+        "score": 6
+      },
+      {
+        "agent": "Agent1",
+        "word": "TEw",
+        "position": [
+          0,
+          9
+        ],
+        "direction": "VERT",
+        "score": 2
+      },
+      {
+        "agent": "Agent2",
+        "word": "Ew",
+        "position": [
+          4,
+          13
+        ],
+        "direction": "HORIZ",
+        "score": 1
+      },
+      {
+        "agent": "Agent1",
+        "word": "Wo",
+        "position": [
+          8,
+          0
+        ],
+        "direction": "HORIZ",
+        "score": 10
+      },
+      {
+        "agent": "Agent2",
+        "word": "Re",
+        "position": [
+          0,
+          5
+        ],
+        "direction": "VERT",
+        "score": 1
+      },
+      {
+        "agent": "Agent1",
+        "word": "Nu",
+        "position": [
+          8,
+          13
+        ],
+        "direction": "HORIZ",
+        "score": 1
+      },
+      {
+        "agent": "Agent2",
+        "word": "It",
+        "position": [
+          6,
+          10
+        ],
+        "direction": "HORIZ",
+        "score": 1
+      },
+      {
+        "agent": "Agent1",
+        "word": "NEe",
+        "position": [
+          1,
+          12
+        ],
+        "direction": "HORIZ",
+        "score": 2
+      },
+      {
+        "agent": "Agent2",
+        "word": "LISt",
+        "position": [
+          8,
+          8
+        ],
+        "direction": "HORIZ",
+        "score": 3
+      },
+      {
+        "agent": "Agent1",
+        "word": "aR",
+        "position": [
+          6,
+          1
+        ],
+        "direction": "HORIZ",
+        "score": 3
+      },
+      {
+        "agent": "Agent2",
+        "word": "Li",
+        "position": [
+          2,
+          3
+        ],
+        "direction": "HORIZ",
+        "score": 1
+      }
+    ]
+  }
+]

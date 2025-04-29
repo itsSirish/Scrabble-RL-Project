@@ -1,19 +1,21 @@
- 
+# scrabble_rl/selfplay_env.py
+
 import gym
 from gym import spaces
 import numpy as np
 from Game import Game
 from utils import mapBoardToState
 
-  # your existing state encoder
-
-class ScrabbleEnv(gym.Env):
-    def __init__(self, max_moves=300):
+class SelfPlayScrabbleEnv(gym.Env):
+    def __init__(self, agent1, agent2, max_moves=300):
         super().__init__()
         self.game = Game()
         self.max_moves = max_moves
         self.current_step = 0
-        self.action_space = spaces.Discrete(50)
+        self.agent1 = agent1
+        self.agent2 = agent2
+        self.current_agent = 0  # 0: agent1, 1: agent2
+        self.moves = []
 
         self.observation_space = spaces.Dict({
             "board": spaces.Box(low=0, high=26, shape=(2, 15, 15), dtype=np.int32),
@@ -25,11 +27,12 @@ class ScrabbleEnv(gym.Env):
     def reset(self):
         self.game = Game()
         self.current_step = 0
-        self.moves = self.game.find_best_moves(self.game.players[0].rack, num=50)
+        self.current_agent = 0
+        self.moves = self.game.find_best_moves(self.game.players[self.current_agent].rack, num=50)
         return self._get_obs()
 
     def _get_obs(self):
-        state = mapBoardToState(self.game, self.game.players[self.game.currentPlayer].rack)
+        state = mapBoardToState(self.game, self.game.players[self.current_agent].rack)
         return {
             "board": np.array(state["board"]).transpose(2, 0, 1),
             "rack": np.array(state["rack"]),
@@ -38,27 +41,26 @@ class ScrabbleEnv(gym.Env):
         }
 
     def step(self, action_idx):
-
         if len(self.moves) == 0:
-            # No valid moves = skip turn
-            print("⚠️ No valid moves available. Skipping turn.")
             return self._get_obs(), 0, True, {}
 
-        action_idx = min(action_idx, len(self.moves) - 1)  # ✅ clamp safely
+        action_idx = min(action_idx, len(self.moves) - 1)
         move = self.moves[action_idx]
-        print(f"Move selected: {move[0]}  Score: {move[1]}")
 
-        print(f"Available moves: {len(self.moves)}")
-
-        pre_score = self.game.players[self.game.currentPlayer].score
+        pre_score = self.game.players[self.current_agent].score
         self.game.play(move[2], move[0], move[3])
-        post_score = self.game.players[not self.game.currentPlayer].score
+        post_score = self.game.players[not self.current_agent].score
 
-        reward = move[1]  # ✅ Use the move's score directly
+        move_score = move[1]
+        reward = move_score
 
         self.current_step += 1
         done = self.game.numMoves == -1 or self.current_step >= self.max_moves
-        self.moves = self.game.find_best_moves(self.game.players[self.game.currentPlayer].rack, num=50)
+
+        # Switch agent
+        self.current_agent = not self.current_agent
+        self.moves = self.game.find_best_moves(self.game.players[self.current_agent].rack, num=50)
+
         return self._get_obs(), reward, done, {}
 
     def render(self):

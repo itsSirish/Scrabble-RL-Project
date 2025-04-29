@@ -1,22 +1,20 @@
 import numpy as np
 
-class Player():
+class Player:
     def __init__(self):
-        super().__init__()
         self.rack = []
         self.score = 0
 
-    def __str__(self):
-        return str(self.rack) + '\n' + str(self.score)
-
-    def drawTiles(self, bag, tiles):
-        tilesDrawn = 0
-        for letter in tiles:
-            if letter.islower():
-                letter = '?'
-            self.rack.remove(letter)
-        for i in range(len(tiles)):
-            if i < len(bag):
-                self.rack.append(bag[i])
-                tilesDrawn += 1
-        return tilesDrawn
+    def drawTiles(self, bag, lettersUsed):
+        drawn = 0
+        for letter in lettersUsed:
+            try:
+                self.rack.remove(letter)
+            except ValueError:
+                # 🔥 Letter already not present, continue safely
+                pass
+        while len(self.rack) < 7 and len(bag) > 0:
+            self.rack.append(bag[0])
+            bag = np.delete(bag, 0)
+            drawn += 1
+        return drawn

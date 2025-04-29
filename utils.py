@@ -112,35 +112,33 @@ def b():
 
 def mapBoardToState(game, leave):
     state = {}
+    
     bag = [0] * 27
     rack = [0] * 27
 
+    # Bag counts (only bag, not rack)
     for letter in game.bag:
         if letter == '?':
             bag[0] += 1
         else:
             bag[ord(letter) - 64] += 1
-
-    for letter in game.players[game.currentPlayer].rack:
-        if letter == '?':
-            bag[0] += 1
-        else:
-            bag[ord(letter) - 64] += 1
-
     state['bag'] = bag
 
+    # Rack counts
     for letter in leave:
         if letter == '?':
             rack[0] += 1
         else:
             rack[ord(letter) - 64] += 1
-
     state['rack'] = rack
+
+    # Better score encoding
     state['score'] = [
-        game.players[not game.currentPlayer].score,
-        game.players[not game.currentPlayer].score - game.players[game.currentPlayer].score
+        game.players[game.currentPlayer].score,
+        game.players[not game.currentPlayer].score
     ]
 
+    # Board (letter, multiplier)
     board = [[[0, 0] for _ in range(15)] for _ in range(15)]
     for i in range(len(game.board.board)):
         for j in range(len(game.board.board)):
@@ -150,6 +148,7 @@ def mapBoardToState(game, leave):
 
     state['board'] = board
     return state
+
 
 def multiplierToNumber(ml):
     if ml is None:
